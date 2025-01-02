@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Lab04-2</title>
+	<script src="lab04-2.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1>Lab04-2</h1>
+	<h3>1. Increment บวกเพิ่มทีละ 1</h3>
+	<input type="button" value="บวก 1" onclick="increment();" />
+	<input id="incrementText" type="text" value="0" style="width: 10em" />
+	<hr>
+
+	<h3>2. Add numbers</h3>
+	<form id="addNumbersForm" onSubmit="return false;">
+		<input type="text" name="num1" size="3" /> + <input type="text" name="num2" size="3" />
+		<input type="button" value="คำนวณ" onclick="addNumbers();" />
+		<input type="text" name="answer" />
+	</form>
+	<hr>
+
+	<h3>3. จำนวนเฉพาะ (Prime number)?</h3>
+	<form id="isPrimeForm" onSubmit="return false;">
+		<input type="text" size="3" name="number" />
+		<input type="button" value="จำนวนเฉพาะ?" onclick="isPrime();" />
+		<input type="text" size="30" name="answer" />
+	</form>
+	<hr>
+
+	<h3>4. ทายตัวเลข 0-100?</h3>
+	<form id="numberGuessForm" onSubmit="return false;">
+		<input type="text" size="3" name="number" value=0 />
+		<input type="button" value="เดาเลย" onclick="checkGuess();" />
+		<p>เดาครั้งที่: <span id="guessCounter"></span></p>
+		<p id="guessStatus">status</p>
+	</form>
+	<hr>
+
+	<h3>5. Choose Background Color</h3>
+	<form id="backgroundForm" onSubmit="return false;">
+		<input type="radio" name="backgroundRadio" id="white" value="white" onclick="backgroundForm()" checked><label
+			for="white">White</label>
+		<input type="radio" name="backgroundRadio" id="teal" value="teal" onclick="backgroundForm()"><label
+			for="teal">Teal</label>
+		<input type="radio" name="backgroundRadio" id="grey" value="grey" onclick="backgroundForm()"><label
+			for="grey">Grey</label>
+	</form>
+</body>
+
+</html>

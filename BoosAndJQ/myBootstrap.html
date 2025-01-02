@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <style>
+            .col-sm{
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown Link</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                                <li><a href="#" class="dropdown-item">Menu 1</a></li>
+                                <li><a href="#" class="dropdown-item">Menu 2</a></li>
+                                <li><a href="#" class="dropdown-item">Menu 3</a></li>
+                                <li><a href="#" class="dropdown-item">Menu 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- progress -->
+         <div class="progress" mt-5>
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 10%;">10</div>
+         </div>
+         <div class="progress" mt-2>
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 25%;">25</div>
+         </div>
+         <div class="progress" mt-2>
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 50%;">50</div>
+         </div>
+
+        <!-- สร้างForm -->
+        <div class="container mt-5">
+            <div class="mt-3 mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control form-control-lg"
+                    placeholder="Email Address">
+            </div>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Enter your
+                    massage</label>
+                <textarea name="textarea" cols="30" rows="10"
+                    class="form-control" placeholder="message..."></textarea>
+            </div>
+
+            <!-- Data List -->
+            <div>
+                <label for="datalist" class="form-label">Datalist</label>
+                <input type="text" class="form-control" list="dataListOptions"
+                    placeholder="Type something...">
+                <datalist id="dataListOptions">
+                    <option value="BMW"></option>
+                    <option value="Ferari"></option>
+                    <option value="Lambo"></option>
+                    <option value="Honda"></option>
+                    <option value="Toyota"></option>
+                </datalist>
+            </div>
+
+            <!-- alert -->
+            <div class="container mt-5">
+                <div class="alert alert-primary">
+                    Ryuuichi <a href="#" class="alert-link">Click me</a>
+                </div>
+                <div class="alert alert-secondary">
+                    Ryuuichi <a href="#" class="alert-link">Click me</a>
+                </div>
+                <div class="alert alert-danger">
+                    Ryuuichi <a href="#" class="alert-link">Click me</a>
+                </div>
+                <div class="alert alert-dark">
+                    Ryuuichi <a href="#" class="alert-link">Click me</a>
+                </div>
+
+                <div class="alert alert-success">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Consequatur rem voluptatem assumenda natus quae corporis
+                        commodi veniam iure ut architecto voluptas, expedita
+                        necessitatibus inventore provident cum. Saepe dolorem
+                        nihil libero.</p>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit ipsa eligendi, quae officiis eaque laborum
+                        suscipit veritatis illum neque dignissimos quod sequi
+                        quaerat tenetur accusantium autem commodi sint unde
+                        laudantium!</p>
+                </div>
+            </div>
+
+            <!-- span -->
+            <h1> Example heading <span
+                    class="badge bg-secondary">New</span></h1>
+            <h2> Example heading <span class="badge bg-primary">New</span></h2>
+            <h3> Example heading <span class="badge bg-success">New</span></h3>
+            <h4> Example heading <span class="badge bg-warning">New</span></h4>
+            <h5> Example heading <span class="badge bg-info">New</span></h5>
+
+            <h1> Example heading <span
+                    class="badge  rounded-pill bg-secondary">New</span></h1>
+            <h2> Example heading <span
+                    class="badge rounded-pill bg-primary">New</span></h2>
+            <h3> Example heading <span
+                    class="badge rounded-pill bg-success">New</span></h3>
+            <h4> Example heading <span
+                    class="badge rounded-pill bg-warning">New</span></h4>
+            <h5> Example heading <span
+                    class="badge rounded-pill bg-info">New</span></h5>
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"
+                        aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active"
+                        aria-current="page">About</li>
+                </ol>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="#">Home</a></li>
+                    <li class="breadcrumb-item "><a href="#">About</a></li>
+                    <li class="breadcrumb-item active"
+                        aria-current="page">Services</li>
+                </ol>
+            </nav>
+
+            <!-- Button -->
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-success">Button</button>
+            <button type="button" class="btn btn-info">Button</button>
+            <button type="button" class="btn btn-warning">Button</button>
+
+            <button type="button"
+                class="btn btn-outline-primary">Button</button>
+            <button type="button"
+                class="btn btn-outline-success">Button</button>
+            <button type="button" class="btn btn-outline-info">Button</button>
+            <button type="button"
+                class="btn btn-outline-warning">Button</button>
+
+            <!-- Card -->
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-6">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ML-E1mxYeOZ3bHIuxBYDQGReAhbXOvTn7Q&s"
+                        width="100%" alt>
+                    <div class="card-body">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Asperiores ea dolore
+                            ducimus est voluptas eaque, at, sint commodi
+                            temporibus aliquid impedit! Incidunt asperiores
+                            ducimus qui itaque sunt natus, possimus quis.</p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ML-E1mxYeOZ3bHIuxBYDQGReAhbXOvTn7Q&s"
+                        width="100%" alt>
+                    <div class="card-body">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Asperiores ea dolore
+                            ducimus est voluptas eaque, at, sint commodi
+                            temporibus aliquid impedit! Incidunt asperiores
+                            ducimus qui itaque sunt natus, possimus quis.</p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ML-E1mxYeOZ3bHIuxBYDQGReAhbXOvTn7Q&s"
+                        width="100%" alt>
+                    <div class="card-body">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Asperiores ea dolore
+                            ducimus est voluptas eaque, at, sint commodi
+                            temporibus aliquid impedit! Incidunt asperiores
+                            ducimus qui itaque sunt natus, possimus quis.</p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div class="container mt-5">
+                <div id="carouselExample" class="carousel slide"
+                    data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvC2qFLkxlutst_e5V5bi1lMtTvcXtc2wdqg&s"
+                                width="100%" alt>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9L2hgaR-ZEQ3QaeGYgX2VVBPDQAX4gMDBJQ&s"
+                                width="100%" alt>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img
+                                src="https://f.ptcdn.info/413/084/000/lx3h4lhqi1EU8m5Z0SV-o.jpg"
+                                width="100%" alt>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExample"
+                        role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample"
+                        role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--  container-fluid -->
+            <div class="container-fluid mt-5">
+                <div class="row">
+
+                    <!-- Grid -->
+                    <div class="col-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Perspiciatis, accusamus autem voluptatibus illo natus
+                        assumenda numquam animi? Aliquid, iste molestias.
+                    </div>
+                    <div class="col-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Perspiciatis, accusamus autem voluptatibus illo natus
+                        assumenda numquam animi? Aliquid, iste molestias.
+                    </div>
+                    <div class="col-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Perspiciatis, accusamus autem voluptatibus illo natus
+                        assumenda numquam animi? Aliquid, iste molestias.
+                    </div>
+                </div>
+
+                <!-- Gutters -->
+                <div class="row mg-3 g-0">
+                    <div class="col">
+                        <div class="p-3">Custom column padding</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3">Custom column padding</div>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <h1>h1. Bootstrap heading</h1>
+                <h2>h2. Bootstrap heading</h2>
+                <h3>h3. Bootstrap heading</h3>
+                <h4>h4. Bootstrap heading</h4>
+                <h5>h5. Bootstrap heading</h5>
+                <h6>h6. Bootstrap heading</h6>
+
+                <h1 class="display-1">Display 1</h1>
+                <h1 class="display-2">Display 2</h1>
+                <h1 class="display-3">Display 3</h1>
+                <h1 class="display-4">Display 4</h1>
+                <h1 class="display-5">Display 5</h1>
+                <h1 class="display-6">Display 6</h1>
+
+                <!-- img -->
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLQT80WUKZRlOywNB4EDYaMg_ToLazuZJ1Dw&s"
+                    class="img-fluid" alt>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLQT80WUKZRlOywNB4EDYaMg_ToLazuZJ1Dw&s"
+                    class="img-thumbnail" alt>
+
+                <!-- Table -->
+                <table class="table table-primary table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ryu</td>
+                            <td>Ratchanon</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bee</td>
+                            <td>Ackerman</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Ryu</td>
+                            <td>Ratchanon</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Bee</td>
+                            <td>Ackerman</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
